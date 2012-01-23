@@ -1,0 +1,4 @@
+--type-add
+ruby=.haml,.rake,.sass
+--type-add
+js=.json

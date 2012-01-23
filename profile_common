@@ -1,0 +1,22 @@
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+
+export PS1=\
+'$(echo $PWD| sed s/.*\\\///) \
+$(git branch &>/dev/null; if [ $? -eq 0 ];\
+ then echo "(\[\033[00m\]$(git branch | grep ^*|sed s/\*\ //)) ";\
+ fi)\$\[\033[00m\] '
+
+alias wget='curl -O'
+
+alias gi='gem install -V --no-rdoc --no-ri'
+alias bspec='bundle exec rspec'  
+alias apacherestart='sudo /usr/sbin/apachectl graceful'
+
+if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
+
+export ARCHFLAGS="-arch i386 -arch x86_64"
+
+export EDITOR=vim
+
+
+. ~/.git-completion.sh
