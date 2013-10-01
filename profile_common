@@ -11,6 +11,14 @@ alias wget='curl -O'
 alias gi='gem install -V --no-rdoc --no-ri'
 alias bspec='bundle exec rspec'  
 alias apacherestart='sudo /usr/sbin/apachectl graceful'
+alias gitprune='git branch | grep -v master| grep -v staging| xargs -I % git branch -d %'
+alias cleardownloads="rm -rf ~/Downloads/*"
+alias startpg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias killevergreen='ps -ef | grep evergreen | grep -v grep | awk '\''{print $2}'\'' | xargs -I % kill -9 %'
+alias gl="git log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\""
+alias rubylistens="lsof -l | grep ruby | grep LISTEN"
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
@@ -18,5 +26,7 @@ export ARCHFLAGS="-arch i386 -arch x86_64"
 
 export EDITOR=vim
 
+export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH:./bin
 
-. ~/.git-completion.sh
+
+. ~/git-completion

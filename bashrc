@@ -31,3 +31,8 @@ alias svnadd="svn st | grep '^\!' | awk '{print $2}' | xargs svn rm"
 
 # Reload .bashrc
 alias refresh='. ~/.bashrc'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
