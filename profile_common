@@ -26,7 +26,7 @@ export ARCHFLAGS="-arch i386 -arch x86_64"
 
 export EDITOR=vim
 
-export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH:./bin
+export PATH=./bin:/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
 
 . ~/git-completion
