@@ -1,4 +1,3 @@
-echo "loading .bashrc"
 
 # Bash customisations to be syncronised between machines.
 export PS1='\[\e[1;34m\][\u@\h \W]\$\[\e[0m\] '
