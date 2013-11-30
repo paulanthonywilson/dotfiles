@@ -9,7 +9,7 @@ $(git branch &>/dev/null; if [ $? -eq 0 ];\
 alias wget='curl -O'
 
 alias gi='gem install -V --no-rdoc --no-ri'
-alias bspec='bundle exec rspec'  
+alias bspec='bundle exec rspec'
 alias apacherestart='sudo /usr/sbin/apachectl graceful'
 alias gitprune='git branch | grep -v master| grep -v staging| xargs -I % git branch -d %'
 alias cleardownloads="rm -rf ~/Downloads/*"
@@ -26,7 +26,7 @@ export ARCHFLAGS="-arch i386 -arch x86_64"
 
 export EDITOR=vim
 
-export PATH=./bin:/usr/local/bin:/usr/local/share/npm/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
 
 . ~/git-completion
