@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+curl -u paul@edgecase.com:nat-ud-nis-vad-ud -H 'Accept: application/xml' -H 'Content-Type: application/xml' $1

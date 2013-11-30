@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+puts "Password please"
+password = gets
+
+
+loop do
+  puts "char number"
+  c = gets
+  break if c.strip.upcase == "Q"
+  puts password[c.to_i - 1]
+end

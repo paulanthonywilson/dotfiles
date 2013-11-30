@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+curl -u 38c613cf6f1e4f2ca7f6fe6a88ac90886351c79f:X $1
