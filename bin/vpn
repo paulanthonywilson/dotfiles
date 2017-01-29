@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+echo 'deiwe9Oo' | tr -d "\n" | pbcopy

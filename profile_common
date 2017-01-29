@@ -18,6 +18,9 @@ alias killevergreen='ps -ef | grep evergreen | grep -v grep | awk '\''{print $2}
 alias gl="git log --graph --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\""
 alias rubylistens="lsof -l | grep ruby | grep LISTEN"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias hello=ping
+alias ipx='iex -S mix phoenix.server'
+alias secret='mix phoenix.gen.secret | tr -d '\n' | pbcopy'
 
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
@@ -26,7 +29,10 @@ export ARCHFLAGS="-arch i386 -arch x86_64"
 
 export EDITOR=vim
 
-export PATH=~/bin:/usr/local/bin:/usr/local/share/npm/bin:$PATH
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
+
 
 
 . ~/git-completion
+
+

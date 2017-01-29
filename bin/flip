@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+FLIP='(╯°□°）╯︵ ┻━┻)'
+echo $FLIP | tr -d '\n' | pbcopy
+echo $FLIP

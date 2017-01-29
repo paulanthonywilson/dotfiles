@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+SHRUG='¯\_(ツ)_/¯'
+echo $SHRUG | tr -d '\n' | pbcopy
+echo $SHRUG
