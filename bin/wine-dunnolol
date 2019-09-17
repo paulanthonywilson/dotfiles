@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+DUNNOLOL='¯\(°_o)/¯'🍷
+echo $DUNNOLOL | tr -d '\n' | pbcopy
+echo $DUNNOLOL
