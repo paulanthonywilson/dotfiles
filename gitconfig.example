@@ -1,0 +1,28 @@
+[user]
+	name = Paul Wilson
+[core]
+	autocrlf = false
+	excludesfile = ~/.gitignore
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+[color]
+	ui = true
+[log]
+	date = local
+[transer]
+  fsckobjects = true
+[fetch]
+  fsckobjects = true
+[receive]
+  fsckobjects = true
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
