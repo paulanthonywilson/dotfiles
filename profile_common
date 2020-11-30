@@ -15,6 +15,7 @@ alias rubylistens="lsof -l | grep ruby | grep LISTEN"
 alias hello=ping
 alias ipx='iex -S mix phx.server'
 alias secret='mix phoenix.gen.secret | tr -d '\n' | pbcopy'
+alias mtest='mix format && mix test'
 
 
 export ERL_AFLAGS="-kernel shell_history enabled"

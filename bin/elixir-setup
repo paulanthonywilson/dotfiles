@@ -1,0 +1,9 @@
+#/usr/bin/env bash
+
+mix local.hex --force
+mix local.rebar --force
+mix archive.install --force hex phx_new 
+brew update
+brew upgrade -f fwup squashfs coreutils xz pkg-config
+mix archive.install --force hex nerves_bootstrap
+
