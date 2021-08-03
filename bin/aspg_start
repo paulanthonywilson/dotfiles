@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+/Users/paul.wilson/.asdf/installs/postgres/$1/bin/pg_ctl -D /Users/paul.wilson/.asdf/installs/postgres/$1/data -l logfile start
+
+
