@@ -23,22 +23,21 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
-export ARCHFLAGS="-arch i386 -arch x86_64"
 
 export EDITOR=vim
 
 export PATH=/usr/local/opt/libxml2/bin:/usr/local/opt/openssl/bin:./bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH
 
-export LDFLAGS="-L/usr/local/opt/libxml2/lib:/usr/local/opt/openssl/lib:/usr/local/opt/libffi/lib:/usr/local/opt/readline/lib"
-export CPPFLAGS="-I/usr/local/opt/libxml2/include:/usr/local/opt/openssl/include:/usr/local/opt/readline/include:/usr/local/opt/wxwidgets/include"
+# export LDFLAGS="-L/usr/local/opt/libxml2/lib:/usr/local/opt/openssl/lib:/usr/local/opt/libffi/lib:/usr/local/opt/readline/lib"
+# export CPPFLAGS="-I/usr/local/opt/libxml2/include:/usr/local/opt/openssl/include:/usr/local/opt/readline/include"
+#
+# export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig:/usr/local/opt/openssl/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig"
+#
+# #export KERL_CONFIGURE_OPTIONS="--disable-debug --disable-silent-rules --without-javac --enable-shared-zlib --enable-dynamic-ssl-lib --enable-hipe --enable-sctp --enable-smp-support --enable-threads --enable-kernel-poll --enable-wx --enable-darwin-64bit --with-ssl=/usr/local/Cellar/openssl@1.1/1.1.1g"
+#
 
-export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig:/usr/local/opt/openssl/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig"
-
-export KERL_CONFIGURE_OPTIONS="--disable-hipe --enable-darwin-64bit --without-javac --with-ssl=$(brew --prefix openssl)"
-export KERL_BUILD_DOCS="no"
-export CFLAGS="-O2 -g -fno-stack-check -Wno-error=implicit-function-declaration"
-
-
+export ASDF_KERL_VERSION="2.2.4"
+export KERL_BUILD_DOCS=yes
 
 . ~/git-completion
 
